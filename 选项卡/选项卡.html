@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <style type="text/css">
+        input{background:pink;}
+        .active{background:red;}
+        div{width:200px;height:200px;background:#ccc;display:none;}
+    </style>
+</head>
+<body>
+    <input class="active" type="button" value="1" />
+    <input type="button" value="2" />
+    <input type="button" value="3" />
+    <div id="div1" style="display:block;">111</div>
+    <div id="div2">222</div>
+    <div id="div3">333</div>
+    <script type="text/javascript">
+        var aInput=document.getElementsByTagName("input");
+        var aDiv=document.getElementsByTagName("div");
+        for(var i=0;i<aInput.length;i++){
+            aInput[i].index=i;
+            aInput[i].onclick=function(){
+                for(var k=0;k<aInput.length;k++){
+                    aInput[k].className="";
+                    aDiv[k].style.display="none";
+                }
+                aDiv[this.index].style.display="block";
+                /*或者用这个方法aDiv[this.value-1].style.display="block"; //i不在这个里面起作用*/
+                this.className="active";
+            }
+        }
+    </script>
+</body>
+</html>
