@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>百度切换输入法</title>
+</head>
+<style type="text/css">
+    button{width:50px;background:#ccc;margin:5px;}
+    ul{width:50px;background:#ccc;margin:5px;padding:0;}
+    ul li{list-style:none;margin:2px;padding:0;cursor:pointer;}
+</style>
+<body>
+    <button>输入法</button>
+    <ul style="display:none;">
+        <li>拼音</li>
+        <li>五笔</li>
+        <li>退出</li>
+    </ul>
+    <script type="text/javascript">
+        var op=document.getElementsByTagName("button")[0];
+        var oUl=document.getElementsByTagName("ul")[0];
+        var oLi=oUl.getElementsByTagName("li");
+        op.onclick=function(){
+            if(oUl.style.display=="none"){
+                oUl.style.display="block";
+            }else{
+                oUl.style.display="none";
+            }
+        }
+        for(var i=0;i<oLi.length;i++){
+            oLi[i].index=i;
+            oLi[i].onclick=function(){
+
+                op.innerHTML=this.innerHTML;
+                if(this.index==2){
+                    oUl.style.display="none";
+                    op.innerHTML="输入法";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

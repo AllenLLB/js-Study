@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>简单的图片切换</title>
+    <style type="text/css">
+        .active{border:1px solid red}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="BPic"><img src="1.jpg" width="200" height="200"/></div>
+        <img src="1.jpg" width="50" height="50" class="active"/>
+        <img src="2.jpg" width="50" height="50"/>
+        <img src="3.jpg" width="50" height="50"/>
+        <img src="4.jpg" width="50" height="50"/>
+        <img src="5.jpg" width="50" height="50"/>
+        <img src="6.jpg" width="50" height="50"/>
+    </div>
+    <script type="text/javascript">
+        var Bpic=document.getElementsByTagName("div")[1].getElementsByTagName("img")[0];
+        var allPic=document.getElementsByTagName("img");
+        for(var i=1;i<allPic.length;i++){
+            allPic[i].index=i;
+            allPic[i].onmouseover=function(){
+                for(var i=1;i<allPic.length;i++){
+                    allPic[i].className="";
+                }
+                this.className="active";
+                Bpic.src=this.src;
+            }
+            allPic[i].onmouseout=function(){
+                for(var i=1;i<allPic.length;i++){
+                    allPic[i].className="";
+                }
+                allPic[1].className="active";
+                Bpic.src=allPic[1].src;
+            }
+        }
+    </script>
+</body>
+</html>
