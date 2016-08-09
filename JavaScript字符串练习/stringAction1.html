@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>常见的显示的几个方法</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+				big() blink() bold() charAt() charCodeAt() concat() 
+				fixed() fontcolor() fontsize() fromCharCode() indexof() italics() lastIndexof() link() match()
+				replace() search() slice() small() split() strike()
+				sub() substr() substring() sup() toLowerCase()
+				toUpperCase()  toString() valueOf() toLocaleLowerCase() toLocaleUpperCase()
+			*/
+			var str1="this is a string";
+			//big() 将字符串按照大字号来显示
+			str1.big();	  //类似于<big></big>
+			//strike() 使用删除线进行划分
+			str1.strike();
+			//toLowerCase() 把字符串转化为小写
+			str1.toLowerCase();
+			//bold()将字符串按照粗体来显示
+			str1.bold();  //类似于<b>this is a string</b>
+			//blink() 将字符串显示为闪动字符
+			str1.blink(); //类似于<blink>this is a string</blink>
+			//fixed() 将字符串显示为打字机样式
+			str1.fixed();
+			//italics() 将字符串显示为斜体
+			str1.italics();
+			//sub() 将字符串显示为下标
+			str1+str1.sub();
+			//sup() 将字符串显示为上标
+			str1+str1.sup();
+			//link() stringObject.link(url)
+			str1.link("http://www.baidu.com");
+			//fontcolor() 以颜色来显示  stringObject.fontcolor(color)
+			str1.fontcolor("red");
+			//fontsize() 以大小来显示	stringObject.fontsize(size) size必须是1-7
+			str1.fontsize(2);
+			//small() 以小字号来显示
+			str1.small();
+		</script>
+	</body>
+</html>

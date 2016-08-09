@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>常见的字符串操作方法</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+				charAt() charCodeAt() concat() 
+				fromCharCode() indexof() lastIndexOf() match()
+				replace() search() slice() split() strike()
+				substr() substring() toLowerCase()
+				toUpperCase()  toString() valueOf() toLocaleLowerCase() toLocaleUpperCase()
+			*/
+			var str1="this is a string";
+			//charAt()返回指定位置的字符 charAt(index)
+			str1.charAt(2); //0-(length-1)
+			//charCodeAt()  返回在指定的位置的字符的Unicode编码
+			str1.charCodeAt(2);	//105
+			//fromCharCode() 返回按照指定的Unicode编码所指定的字符串
+			//String.fromCharCode(numX,...,numX)可指定一个或者多个
+			String.fromCharCode(105);	//i,这里要用String
+			//indexof()返回指定子字符串的位置
+			str1.indexOf("his");	//要前面的indexOf,O必须得大写
+			//lastIndexOf() 从后向前搜索字符串
+			str1.lastIndexOf(" is");
+		</script>
+	</body>
+</html>

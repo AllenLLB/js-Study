@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>常见的字符串的操作</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//字符串的创建
+		//1.字面量创建
+		var str1="this is a string";
+		//2.创建字符串对象
+		var str2=new String("this is other string");
+		console.log(str1);	//this is a string
+		alert(str2);	//this is other string
+		console.log(str2);
+		/*
+			String {0: "t", 1: "h", 2: "i", 3: "s", 4: " ", 5: "i", 6: "s", 7: " ", 8: "o", 9: "t", 10: "h", 11: "e", 12: "r", 13: " ", 14: "s", 15: "t", 16: "r", 17: "i", 18: "n", 19: "g", length: 20, [[PrimitiveValue]]: "this is other string"}
+		*/
+		console.log(str2.toString());	//this is other string
+	</script>
+</body>
+</html>
