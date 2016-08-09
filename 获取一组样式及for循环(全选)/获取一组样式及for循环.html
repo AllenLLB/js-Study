@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>获取一组样式及for循环</title>
+</head>
+<body>
+    <p>全选</p>
+    <input type="checkbox" /><br/>
+    <input type="checkbox" /><br/>
+    <input type="checkbox" /><br/>
+    <input type="checkbox" /><br/>
+    <input type="checkbox" /><br/>
+    <input type="checkbox" /><br/>
+    <input type="checkbox" /><br/>
+    <input type="checkbox" /><br/>
+    <button value="html">html</button>
+    <button value="js">javascript</button>
+    <button value="css">css</button>
+    <script type="text/javascript">
+        var select=document.getElementsByTagName("p")[0];
+        var ainput=document.getElementsByTagName("input");
+        select.onclick=function(){
+            for(var i=0;i<ainput.length;i++){
+                if(ainput[i].checked){
+                    ainput[i].checked=false;
+                }else{
+                    ainput[i].checked=true;
+                }
+            }
+        }
+        //点击弹出value
+        var bButton=document.getElementsByTagName("button");
+        for(var i=0;i<bButton.length;i++){
+            bButton[i].onclick=function(){
+                alert(this.value);  //注意this的用法
+            };
+        }
+    </script>
+</body>
+</html>
