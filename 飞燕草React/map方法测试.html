@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>map方法测试</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var arr=["a1","a2","a3"];
+			var arr1=arr.concat('a4','a5');
+			// var arr2=arr1.map(function(a){
+			// 	return {name:"libo"+a};
+			// });
+			// for(var i=0;i<arr2.length;i++){
+			// 	console.log("Student"+i+": "+arr2[i].name);
+			// }
+
+			var arr3=arr1.map(function(friend){
+				return "hello my friend: "+friend+"libo";
+			});
+			for(var friend in arr3){
+				console.log("Message"+friend+": "+arr3[friend]);
+			}
+			
+			//map就是遍历数组的每个项,传入函数来处理数组的每个项,到时候的新数组就是处理之后的返回值组成的数组
+		</script>
+	</body>
+</html>
+<!--
+array.map(callback[, thisObject]); 
+ 下面是参数的详细信息：
+
+callback : 从当前的元素函数产生新的数组的元素。
+
+thisObject : 对象作为该执行回调时使用
+
+返回值:
+
+返回创建数组
+
+兼容性：
+
+这种方法是一个JavaScript扩展到ECMA-262标准;因此它可能不存在在标准的其他实现。为了使它工作，你需要添加下面的脚本代码在顶部：
+
+ if (!Array.prototype.map) 
+{ 
+Array.prototype.map = function(fun /*, thisp*/) 
+{ 
+var len = this.length; 
+if (typeof fun != "function") 
+throw new TypeError(); 
+ 
+var res = new Array(len); 
+var thisp = arguments[1]; 
+for (var i = 0; i < len; i++) 
+{ 
+if (i in this) 
+res[i] = fun.call(thisp, this[i], i, this); 
+} 
+ 
+return res; 
+}; 
+} 
+
+ 例子：
+
+ 
+ 
+
+        <html> 
+        <head> 
+        <title>JavaScript Array map Method</title> 
+        </head> 
+        <body> 
+        <script type="text/javascript"> 
+        if (!Array.prototype.map) 
+        { 
+        Array.prototype.map = function(fun /*, thisp*/) 
+        { 
+        var len = this.length; 
+        if (typeof fun != "function") 
+        throw new TypeError(); 
+         
+        var res = new Array(len); 
+        var thisp = arguments[1]; 
+        for (var i = 0; i < len; i++) 
+        { 
+        if (i in this) 
+        res[i] = fun.call(thisp, this[i], i, this); 
+        } 
+         
+        return res; 
+        }; 
+        } 
+         
+        var numbers = [1, 4, 9]; 
+        var roots = numbers.map(Math.sqrt); 
+         
+        document.write("roots is : " + roots );  
+         
+        </script> 
+        </body> 
+        </html> 
+
+这将产生以下结果：
+
+ 
+ 
+
+        roots is : 1,2,3  
+
+
+
+
+{
+        users.map(function(info){
+                return <Person name={info}></Person>
+        });
+}
+
+{/*单个人的列表的样式*/}
+var divStyle = {
+  color: 'white',
+  backgroundColor: '#EBB2DD',
+  width:'90%',
+  height:'35px',
+  lineHeight:'35px',
+  textAlign:'center',
+  float:'left',
+  margin:'10px 5%',
+
+}
+
+-->

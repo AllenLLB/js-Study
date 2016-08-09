@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript语法巩固</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr={};
+		var arr1=[];
+		if(arr instanceof Object){	//object instanceof constructor
+			//检测对象是不是被这个构造函数构建
+			console.log(arr.prototype);
+			// console.log(arr.prototype.constructor);
+		}else{
+			console.log("arr");
+		}
+		if(Array.isArray(arr1)){
+			alert("Object(arr1)"+"is a Array");
+		}
+	</script>
+</body>
+</html>

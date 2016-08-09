@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+　　　　font: normal 100% Helvetica, Arial, sans-serif;
+}
+/*字体也不能使用绝对大小（px），而只能使用相对大小（em）*/
+/*字体大小是页面默认大小的100%，即16像素*/
+
+img { max-width: 100%;}
+
+/*图片自适应*/
+
+a{
+	text-decoration: none;
+	color: black;
+}
+li{
+	list-style: none;
+}
+
+#container{
+	box-sizing: border-box;
+	min-width: 300px;
+	width: 70%;
+	height: auto;
+	margin: 30px auto;
+}

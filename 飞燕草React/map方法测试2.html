@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>map方法测试</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr=['a','b','c','d','e'];
+		var arr1=arr.map(function(index,item){
+			return index.toUpperCase()+item;
+		});
+		console.log(arr1);
+		/*注意map函数传入参数的函数可有两个参数,则第二个参数表示数组的下标*/
+	</script>
+</body>
+</html>
