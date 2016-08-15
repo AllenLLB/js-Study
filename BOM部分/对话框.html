@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对话框</title>
+</head>
+<body>
+	<script type="text/javascript">
+	// 注意：三种方法都会产生阻塞
+		// 第一种对话框,警告框alert
+		window.alert("hello alert");
+		// 第二种信息确认框
+		var Ob=window.confirm("你确定要删除吗!!!"); //这个方法会返回一个布尔值
+		alert(Ob);
+		// 第三种获取用户输入的信息,返回的是字符串信息 
+		var name=window.prompt("what your name?");
+		alert(name);
+	</script>
+</body>
+</html>

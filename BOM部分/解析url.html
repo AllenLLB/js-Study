@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>解析url</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//window的location对象引用的是window的Location对象
+		var url=window.location;	//url是一个location对象,toString()之后和href字符串一样
+		var urlHref=location.href;
+		// 下面将遍历url对象输出URL对象的各个属性
+		for(key in url){
+			document.write("'"+key+"': "+url[key]+'<br/>');
+		}
+	</script>
+</body>
+</html>

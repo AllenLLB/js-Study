@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多窗口和窗体</title>
+</head>
+<body>
+<!-- <iframe>类似于a标签只不过src是一个页面 -->
+	<iframe src="ifram1.html" frameborder="2" id="f1"></iframe>
+	<iframe src="ifram2.html" frameborder="2" id="f2"></iframe>
+	<iframe src="ifram3.html" frameborder="2" id="f3"></iframe>
+	<script type="text/javascript">
+		// 打开和关闭窗口对ifram有用
+		document.onclick=function(e){
+			var oEvent=e||window.event;
+			oEvent.cancelBubble=true;
+			// window.open("ifram1.html");
+			var aIframs=window.frames;//frames不是document的而是window的
+			alert(aIframs.length); //包含的是子窗口的数量
+			for(var i=0;i<aIframs.length;i++){
+				console.log(aIframs[i]); //每一个frame都是一个window对象
+			}
+			console.log(aIframs.f1.src);
+			console.log(aIframs.f2);
+			console.log(aIframs.f3);   
+			// 也可以通过windows来获取所有的window窗口
+			// 顶级窗口
+			console.log(parent===self);
+			console.log(parent===top);
+			console.log(parent===window);   //window是和self top parent完全等价的,返回的都是代理对象
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浏览历史</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 使用的是window的history对象属性
+		//主要使用history的三个方法和一个属性
+		// length属性表示浏览历史的数量
+		// go(number)  back() forward  number必须是整数但是正还是负数不限定
+		var len=window.history.length;
+		alert(len);
+		document.onclick=function(){
+			history.forward();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>navigator对象</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// navigator对象包含浏览器厂商和版本信息
+		var Onav=window.navigator;
+		alert(typeof Onav);
+		// 对浏览器信息进行遍历输出
+		for(key in Onav){
+			document.write("'"+key+"': "+Onav[key]+"<br/>");
+		}
+		// 常见的几个比较重要的信息
+		console.log(Onav.appName);
+		console.log(Onav.appVersion);
+		console.log(Onav.userAgent);
+		console.log(Onav.platform);
+	</script>
+</body>
+</html>

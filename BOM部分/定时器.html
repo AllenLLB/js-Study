@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于两种定时器</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function invoke(f,start,interval,end){
+			if(!start) start=0;			//默认设置0毫秒
+			if(arguments.length<=2){	//单词调用模式
+				setTimerout(f,start);	//若干秒之后的单词调用模式
+			}
+			else{							//多次调用
+				setTimerout(repeat,start);	//在若干秒之后调用repeat()函数
+				function repeat(){	//在上一行的setTimeout中调用
+					var h=setInterval(f,interval);
+					//在end毫秒之后停止调用,前提是end已经定义了
+					if (end) {
+						setInterval(function(){
+							clearInterval(h);
+						},end);
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>

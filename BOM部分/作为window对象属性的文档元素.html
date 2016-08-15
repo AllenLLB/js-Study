@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作为window对象属性的文档元素</title>
+</head>
+<body>
+	<p id="div">hello javascript</p>
+	<script type="text/javascript">
+		// 在客户端JavaScript中,window对象是以全局对象的形式存在于作用域链的最上层,意味着html文档中使用的id属性可以成为脚本访问的全局对象
+		var oDiv=window.div;
+		var oDiv2=div;		//因为是全局作用域,可以直接作为window的属性来进行使用
+		alert(oDiv.innerHTML);
+		alert(oDiv2.innerHTML);
+	</script>
+</body>
+</html>

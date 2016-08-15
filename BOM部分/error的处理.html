@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>错误的处理</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// window对象的onerror属性表示错误处理程序
+		// 当此事件处理程序返回false的时候表示错误已经被处理了
+		window.alert;
+		window.onerror=function(){
+			alert("hello allen 并没有这个变量存在!");
+		}
+	</script>
+</body>
+</html>

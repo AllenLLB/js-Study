@@ -75,4 +75,5 @@ function startMove(element, attr, iTarget) {
             } 
         } 
     }, 30); 
-}  
+} 
+ 
