@@ -1,8 +1,8 @@
     //一个资源数组,来存放src属性的取值
-    var  resources=new Array("../imgs/rw1.gif","../imgs/rw2.gif","../imgs/rw3.gif","../imgs/rw4.gif",
-                       "../imgs/rw5.gif","../imgs/rw6.gif","../imgs/rw7.gif","../imgs/rw8.gif","../imgs/RW91.gif");
-    var testArr=new Array("rw1.gif","rw2.gif","rw3.gif","rw4.gif",
-                       "rw5.gif","rw6.gif","rw7.gif","rw8.gif","RW91.gif");
+    var  resources=new Array("../imgs/wy1.gif","../imgs/wy2.gif","../imgs/wy3.gif","../imgs/wy4.gif",
+                       "../imgs/wy5.gif","../imgs/wy6.gif","../imgs/wy7.gif","../imgs/wy8.gif","../imgs/RW91.gif");
+    var testArr=new Array("wy1.gif","wy2.gif","wy3.gif","wy4.gif",
+                       "wy5.gif","wy6.gif","wy7.gif","wy8.gif","RW91.gif");
     // 为了随机生成一个数组变量作为上面数组的索引下标(0-8)
     var ranNums=new Array(0);
 
@@ -116,22 +116,14 @@
         var aIndex=getAim(obj,eIndex);
         exchange(eIndex,aIndex);
         render();
-        for(var i=0;i<srcs.length;i++){
-            console.log(srcs[i]);
-            console.log(testArr[i]);
-            console.log(srcs[i].search(testArr[i]));
-        }
-        for(var i=0;i<resources.length;i++){
-            console.log(resources[i]);
-        }
         if(success(resources,srcs)){
             getEmpty=getAim=exchange=render=null;
-            imgs[8].src="../imgs/rw9.gif";
+            imgs[8].src="../imgs/wy9.gif";
             gx.style.display="block";
         }
         // if(isSuccess){
         //     getEmpty=getAim=exchange=render=null;
-        //     imgs[8].src="../imgs/rw9.gif";
+        //     imgs[8].src="../imgs/wy9.gif";
         //     alert("恭喜你！");
         // }
     }
@@ -174,12 +166,8 @@
 
     }
     bind();
-    //首先取得含空白图片的div
-    // function getEmpty(){
-    //     for(var i=0;i<nodeImgs.length;i++){
-    //         if(/09/.test(nodeImgs[i].src)){
-    //             return nodeImgs[i].parentNode;
-    //         }
-    //     }
-    // }
+
+    document.oncontextmenu=function(){
+        return false;
+    }
 

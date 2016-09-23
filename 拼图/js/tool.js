@@ -36,11 +36,11 @@ function getByClass(classname){
 }
 
 // 绑定事件
-function addEvent(obj,type,fn){
-    if(obj.attachEvent){
-        obj.attachEvent('on'+type,fn)
-    }else if(obj.addEventListener){
-        obj.addEventListener(type,fn,false);
+function addEvent(target,type,fn){
+    if(target.addEventListener){
+        target.addEventListener(type,fn,false);
+    }else if(target.addEventListener){
+        target.attachEvent("on"+type,fn);
     }
 }
 
