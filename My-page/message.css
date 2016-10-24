@@ -1,0 +1,14 @@
+#all{width:1024px;height:773px;background:rgba(136,136,136,0.75);padding-top:10px;}
+#all .left{width:100px;height:700px;float:left;border:1px solid blue;}
+
+
+#all .middle{width:700px;height:700px;float:left;border:1px solid red;padding:0;}
+#all .middle #form{width:550px;height:500px;border:1px solid blue;margin:100px auto;}
+#all .middle #form .label1,.label2,.label3,.label4{display:block;padding-top:40px;margin:10px 50px 10px  75px;}
+#all .middle #form .label1 label,.label2 label,.label3 label,.label4 label{line-height:30px;font-size:20px;}
+#all .middle #form .label1 input{width:300px;height:30px;margin-left:20px;}
+#all .middle #form .label2 input{width:300px;height:30px;}
+#all .middle #form .label4 textarea{width:300px;height:60px;}
+
+
+#all .right{width:100px;height:700px;float:right;border:1px solid yellow;}

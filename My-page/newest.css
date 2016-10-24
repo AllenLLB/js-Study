@@ -1,0 +1,27 @@
+#main{width:1024px;height:773px;background:rgba(136,136,136,0.75);padding-top:10px;}
+#main .aside_left{width:270px;height:700px;float:left;}
+#main .aside_left .list1{height:220px;width:200px;background:#343B48;margin:30px auto 0;border-radius:25px;}
+#main .aside_left .list1 li{list-style: none;height:40px;text-align:center;}
+#main .aside_left .list1 li:hover{background:#B7B7B7;border-radius:5px;}
+#main .aside_left .list1 a{text-decoration:none;color:#ffffff;font-size:15px;font-weight:bold;line-height:40px;}
+#main .aside_left .list2{height:400px;width:200px;background:#343B48;margin:20px auto 0;text-align:center;padding-top:20px;border-radius:25px;}
+#main .aside_left .list2 img{border-radius:70px;}
+#main .aside_left .list2 img:hover{border:2px solid #ffffff;}
+#main .aside_left .list2 span{line-height:40px;font-size:15px;color:#ffffff;font-weight:bold;}
+
+#main .aside_right{width:650px;height:700px;float:right;margin-right:30px;}
+#main .aside_right .new1{width:600px;height:290px;background:#343B48;margin:30px auto 15px;padding:10px;border-radius:25px;}
+#main .aside_right .new1 h2{margin-top:10px;color:#ffffff;transition:1s;-wibkit-trasition:1s;}
+#main .aside_right .new1 h2:hover{text-indent:2em;}
+#main .aside_right .new1 p{height:190px;line-height:25px;font-size:20px;color:#ffffff;text-indent:2em;margin-top:20px;padding-top:5px;}
+#main .aside_right .new1 ul li{display:inline;list-style: none;margin-left:15px;}
+#main .aside_right .new1 ul a{color: rgba(163, 173, 228, 0.87);}
+#main .aside_right .new1 ul a:hover{color:#ffffff;text-decoration:underline;font-weight:bolder;}
+
+#main .aside_right .new2{width:600px;height:290px;background:#343B48;margin:30px auto 15px;padding:10px;border-radius:25px;}
+#main .aside_right .new2 h2{margin-top:10px;color:#ffffff;transition:1s;-wibkit-trasition:1s;}
+#main .aside_right .new2 h2:hover{text-indent:2em;}
+#main .aside_right .new2 p{height:190px;line-height:25px;font-size:20px;color:#ffffff;text-indent:2em;margin-top:20px;padding-top:5px;}
+#main .aside_right .new2 ul li{display:inline;list-style: none;margin-left:15px;}
+#main .aside_right .new2 ul a{color: rgba(163, 173, 228, 0.87);}
+#main .aside_right .new2 ul a:hover{color:#ffffff;text-decoration:underline;font-weight:bolder;}

@@ -1,0 +1,36 @@
+/*==================格式化通用模式========================*/
+*{margin:0;padding:0;border:none;}
+a{text-decoration:none;}
+img{border:none;}
+
+/*========================主体部分设计=============================*/
+#body{width:1024px;height:773px;background:rgba(136,136,136,0.75);padding-top:10px;}
+#body .section1,.section2,.section3{width:800px;height:220px;margin:8px auto 20px auto;padding-top:15px;background:#888888;border-radius:15px;}
+
+#body .section1 .about1{float:left;width:200px;height:190px;padding:8px 0 0 30px;margin-left:50px;}
+#body .section1 .about1 img{border-radius:5px;box-shadow:2px 2px 5px #3e1e31}
+#body .section1 .about1 img:hover{border:2px solid #4548aa}
+#body .section1 .about1 .pic_say1{font-size:15px;color:#000000;font-weight:bold;padding-left:15px;}
+#body .section1 .article1{float:right;width:500px;height:190px;padding:8px 10px 0 0;}
+#body .section1 .article1 h2{transition: 0.5s;-moz-transition:0.5s;-webkit-transition:0.5s;}
+#body .section1 .article1 h2:hover{text-indent:32px;}
+#body .section1 .article1 p{text-indent:2em;line-height:23px;font-size:20px;}
+
+#body .section2 .about2{float:left;width:200px;height:190px;padding:8px 0 0 30px;margin-left:50px;}
+#body .section2 .about2 img{border-radius:5px;box-shadow:2px 2px 5px #3E1C0D}
+#body .section2 .about2 img:hover{border:2px solid #000000}
+#body .section2 .about2 .pic_say2{font-size:15px;color:#000000;font-weight:bold;padding-left:15px;}
+#body .section2 .article2{float:right;width:500px;height:190px;padding:8px 10px 0 0;}
+#body .section2 .article2 h2{transition:0.5s;-moz-transition:0.5s;-webkit-transition:0.5s;}
+#body .section2 .article2 h2:hover{text-indent:32px;}
+#body .section2 .article2 p{text-indent:2em;line-height:23px;font-size:20px;}
+
+#body .section3 .about3{float:left;width:200px;height:190px;padding:8px 0 0 30px;margin-left:50px;}
+#body .section3 .about3 img{border-radius:5px;box-shadow:2px 2px 5px #353e1f}
+#body .section3 .about3 img:hover{border:2px solid #ffffff}
+#body .section3 .about3 .pic_say3{font-size:15px;color:#000000;font-weight:bold;padding-left:15px;}
+#body .section3 .article3{float:right;width:500px;height:190px;padding:8px 10px 0 0;}
+#body .section3 .article3 h2{transition:0.5s;-moz-transition:0.5s;-webkit-transition:0.5s;}
+#body .section3 .article3 h2:hover{text-indent:32px;}
+#body .section3 .article3 p{text-indent:2em;line-height:23px;font-size:20px;}
+

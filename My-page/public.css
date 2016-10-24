@@ -1,0 +1,22 @@
+/*==================格式化通用模式========================*/
+*{margin:0;padding:0;border:none;}
+a{text-decoration:none;}
+img{border:none;}
+
+/*================设置文档标签的样式============================*/
+#container{width:1024px;height:1024px;margin:0 auto;}
+#header{width:1024px;height:206px;background:url(pic/head-bg.jpg);opacity:1;background-size:1024px 206px; }
+#header .section{position:relative;width:1024px;height:206px;background:rgba(212,212,212,0.275);}
+#header .section .person{position:relative;float:right;width:260px;height:130px;margin:20px 100px 20px 50px;padding-left:25px;}
+#header .section .person img{border-radius:10px;box-shadow:1px 1px 10px #4548aa;}
+#header .section .person img:hover{position:absolute;top:25px;left:30px;}
+#header .section .person .name{position:absolute;top:70px;left:160px;line-height:25px;font-size:25px;color:#ffffff;}
+#header .section .person .name:hover{font-size:30px;font-weight:bolder;color: #854e59;}
+#header .section .list{position:absolute;top:144px;left:0;width:610px;height:60px;}
+#header .section .list .nav{width:610px;height:60px;}
+#header .section .list .nav li{display:block;float:left;width:149px;height:40px;margin:10px 1px 7px 1px;padding-top:10px;line-height:30px;font-size:25px;text-align:center;}
+#header .section .list .nav a{color:#ffffff;}
+#header .section .list .nav li:hover{background:rgba(212,212,212,0.6);border-top-left-radius:40px;border-top-right-radius:5px;border-bottom-right-radius:40px;border-right-left-radius:5px;}
+
+#footer{width:1024px;height:45px;background:#888888;text-align:center;font-size:13px;color:rgba(225,225,225,1)}
+#footer span{line-height:40px;}
