@@ -1,0 +1,96 @@
+body{
+    background:lightgreen;
+    height:1000px;
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-family:"ËÎÌו";
+    font-size:13px;
+}
+#main{
+    width:530px;
+    height:350px;
+    margin:0 auto;
+    border:1px solid black;
+}
+img{
+    margin-top:5px;
+    border:none;
+}
+.div1{
+    height:27px;
+    background:#FFFFFF;
+}
+.div1 .left{
+    float:left;
+}
+.div2{
+    height:81px;
+    background:url(pic/1.png);
+}
+.div3{
+    height:242px;
+    background:#F0F0F0;
+}
+.div3 .top{
+    height:192px;
+}
+.div3 .top .inp1,.inp2,.inp3,.inp4,.inp5 {
+    width: 100%;
+    height: 25px;
+    margin-bottom:4px;
+}
+.div3 .top .inp1{
+    padding-top:10px;
+}
+.div3 .top label{
+    margin-right:100px;
+}
+.div3 .top .inp3 label{
+    margin-right:112px;
+}
+.div3 .top select{
+    width:300px;
+}
+.div3 .top .inp4 select{
+    width:260px;
+}
+.div3 .top .inp5 input{
+    width:260px;
+}
+.div3 .top .inp4 label{
+    margin-right:182px;
+}
+.div3 .top .inp5 label{
+    margin:0 182px 0 15px;
+}
+.div3 .top .inp6 .che{
+    margin-left:170px;
+}
+hr{
+    width:500px;
+    margin:0px;
+}
+.div3 .bottom{
+    height:50px;
+}
+.div3 ul li{
+    display: block;
+    float:left;
+    margin:0 5px 0 5px;
+}
+.div3 ul li a{
+    width:90px;
+    height:25px;
+    border:1px solid #ADADAD;
+    display: block;
+    float:left;
+    margin:0 5px 0 5px;
+    text-align:center;
+    line-height:25px;
+    text-decoration:none;
+    color:#000;
+}
+.div3 ul li a:hover{
+    background:blue;
+}

@@ -1,0 +1,174 @@
+#main{
+    position:relative;
+    width:500px;
+    height:700px;
+    margin:0 auto;
+    border:2px solid #AAD7FF;
+}
+#top{
+    width:500px;
+    height:215px;
+    background:url(pic/top1.jpg);
+    margin:0 auto;
+}
+#top .empty{
+    height:85px;
+}
+#top .name{
+    height:40px;
+    padding-left:150px;
+    font-weight: bold;
+}
+#top .name .span1{
+    height:40px;
+    line-height: 40px;
+    font-size:25px;
+    color:#ffffff;
+    text-shadow:3px 3px 3px #333333;
+}
+#top .name .span2{
+    height:40px;
+    line-height: 40px;
+    font-size:15px;
+    color:#ffffff;
+}
+/*================================================等级块===================================================*/
+#top .contact{
+    height:90px;
+    background: rgba(146,152,155,0.4);
+}
+#top .contact .qq_nav{
+    height:60px;
+}
+#top .contact .qq_nav .rank_form{
+    padding-left:150px;
+}
+#top .contact .qq_nav .rank_form .rank{
+    width:500px;
+    height:25px;
+    margin:2px auto;
+}
+#top .contact .qq_nav .rank_form .rank a{
+    margin-right:10px;
+}
+#top .contact .qq_nav .rank_form .tag{
+    width:500px;
+    height:15px;
+}
+.rank_form .tag .inp{
+    margin:0;
+    padding:0;
+    border:none;
+    background:rgba(253,255,255,0);
+}
+.rank_form .tag .inp:hover{
+    border:1px solid #000000;
+}
+.rank_form .tag .inp:focus{
+    background:#ffffff;
+}
+#top .qq_nav  hr{
+    float:left;
+    width:246px;
+    height:2px;
+}
+#top .qq_nav .hr1{
+    background:red;
+}
+#top .qq_nav .hr2{
+    background:limegreen;
+}
+/*================================================导航=====================================================*/
+#top .contact .nav{
+    width:500px;
+    height:30px;
+}
+#top .contact .nav ul{
+    height:30px;
+    margin: 0;
+    padding:0;
+}
+#top .contact .nav ul li{
+    display:block;
+    float:left;
+    width:80px;
+    height:30px;
+    line-height: 30px;
+}
+#top .contact .nav ul li a{
+    color:#ffffff;
+}
+#top .contact .nav ul li:hover{
+    background:blue;
+}
+/*============================================中间主体部分==============================================*/
+#middle{
+    height:615px;
+}
+#middle .midd_top button{
+    display:block;
+    width:68px;
+    height:25px;
+    float:right;
+    text-align:left;
+    margin:8px 20px 5px 0;
+}
+#middle .midd_hr{
+    clear:both;
+}
+.midd_bottom .midd_bottom_main{
+    width:450px;
+    margin:0 auto;
+    background:red;
+}
+#middle .midd_bottom .right{
+    width:300px;
+    height:550px;
+    float:left;
+}
+#middle .midd_bottom .right ul{
+    padding:0 10px 0 0;
+    margin:0 0 0 10px;
+}
+#middle .midd_bottom .right ul li{
+    list-style-type:none;
+    width:300px;
+    height:25px;
+    line-height:25px;
+    font-size:15px;
+    font-weight: bold;
+    margin-top:20px;
+}
+#middle .midd_bottom .right ul .li1{
+    margin-bottom:30px;
+}
+#middle .midd_bottom .right ul .li2{
+    margin-bottom:30px;
+}
+/*============================================中间左边===================================*/
+#middle .midd_bottom .left{
+    width:100px;
+    height:600px;
+    float:right;
+    margin:25px 20px 0 0;
+}
+#middle .midd_bottom .left figcaption{
+    width:60px;
+}
+/*==============================================底部部分=====================================================*/
+#bottom{
+    height:85px;
+    background:skyblue;
+}
+/*===============================================自由头像======================================================*/
+#main #free{
+    width:76px;
+    height:79px;
+    position:absolute;
+    top:90px;
+    left:45px;
+    box-shadow:10px 10px 10px;
+}
+#main #free img{
+    border:1px solid #ffffff;
+}

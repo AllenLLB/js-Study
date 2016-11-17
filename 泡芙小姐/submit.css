@@ -1,0 +1,25 @@
+/*---------------------------------------------------第二个页面-提交页面的设计------------------------------------------------*/
+#leftBody p.p0{
+    color:#000000;
+    font-size:18px;
+    margin:30px 0 30px 0;
+}
+#leftBody form label{
+    display:block;
+    font-size:14px;
+    color:#555555;
+    margin:15px 0 3px 0;
+}/*除了用br来设置换行，label为内联元素，还可以将他设置为块级元素*/
+#leftBody form input{
+    height:20px;
+}
+#leftBody form input.btn_sub{
+    border:none;
+    cursor:pointer;
+    float:left;
+    margin-top:6px;
+    height: 27px;
+}
+#leftBody form input.btn2{
+    margin-left:160px;
+}

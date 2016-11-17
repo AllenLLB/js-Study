@@ -1,0 +1,33 @@
+body{margin:0;padding:0;background:url(BigBack.jpg) ;}
+img{border:0;}
+#container{width:411px;height:411px;position:relative;margin:100px auto 0 auto;box-sizing: content-box;}
+#BigPic{width:411px;height:411px;border:1px solid hotpink;
+        position:absolute;margin:0;
+        top:100px;left:0}
+#redMe{width:300px;height:400px; border:1px solid #568;background:url(back.jpg);font-style:italic;
+        position:absolute;top:90px;right:40px;letter-spacing:5px;text-indent:25px}
+#container .all {padding:0;margin:0;width:137px;height:137px;}
+#container .img1{position:absolute; top:0;left:0}
+#container .img2{position:absolute;top:0;left:137px}
+#container .img3{position:absolute;top:0;left:274px}
+#container .img4{position:absolute;top:137px;left:0}
+#container .img5{position:absolute;top:137px;left:137px}
+#container .img6{position:absolute;top:137px;left:274px}
+#container .img7{position:absolute;top:274px;left:0}
+#container .img8{position:absolute;top:274px;left:137px}
+#container .img9{position:absolute;top:274px;left:274px}
+
+#button{
+    width:300px;
+    height:50px;
+    line-height:50px;
+    margin:0;
+    padding-left:30px;
+    border:1px solid #568;
+    position:absolute;
+    top:500px;
+    right:10px;
+}
+#button button{
+    width:65px;
+}

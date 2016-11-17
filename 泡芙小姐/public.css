@@ -1,0 +1,230 @@
+/*----------------------------------------------------首先是基本格式的转化----------------------------------------------------------------*/
+body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,textarea{
+     margin:0;
+     padding:0;
+     font-size:13px;
+ }
+ul{
+    list-style:none;
+}
+img,a img{
+    border:none;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/*-----------------------------------------------------------------查看按钮样式------------------------------------------------*/
+.btnStyle {
+    background: url(pic/default.png);
+    display: block;
+    width: 103px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btnStyle:hover{
+    background: url("pic/d_hover.png") ;
+}
+/*------------------------------------------------------------------一样的头部----------------------------------------------------------------------*/
+#header{
+    height:452px;
+    background:url(pic/top_bg.jpg) repeat-x;
+}
+#top{
+    height: 100px;
+}
+#top .logo{
+    width:291px;
+    padding:15px 0 0 25px;
+    float:left;
+}
+#top h1 span{
+    font-size:14px;
+    color:#ccc;
+    float:right;
+}
+#top .search{
+    width:280px;
+    height:50px;
+    float:right;
+    margin:30px 30px 0px 20px;
+}
+#top .search .text{
+    width: 180px;
+    height: 15px;
+    background: #161B1F;
+    color:#BCBCBC;
+    border:1px solid #0B0E10;
+    padding:5px;
+}
+#top .search .submit{
+    width: 80px;
+    height: 28px;
+    cursor:pointer;
+}
+#nav{
+    height: 50px;
+}
+#nav ul{
+    margin:0 0 0 25px;
+}
+#nav ul li{
+    float:left;
+    margin:0 10px 0 0;
+}
+#nav ul li a{
+    color:black;
+    font-size:13px;
+    font-weight:bold;
+    display:block;
+    width:103px;
+    height: 27px;
+    text-align:center;
+    line-height:27px;
+    margin:10px 0 0 0;
+}
+#nav ul li a:hover{
+    background:url(pic/hover.png);
+    color:#ffffff;
+    text-decoration:none;
+}
+#runPlay{
+    height:301px ;
+    background:url(pic/runplay_bg.jpg);
+}
+#runPlay .left{
+    width: 300px;
+    float:left;
+    margin:50px 0 0 30px;
+}
+#runPlay .right {
+    width: 300px;
+    float: left;
+    margin:50px 0 0 80px;
+}
+#runPlay .right dl dt{
+    font-size:24px;
+    margin:0 0 20px 0;
+}
+#runPlay .right dl dd.txt{
+    font-size:16px;
+    color:#ffffff;
+    margin:0 0 20px 0;
+}
+#runPlay .right dl dd.btn a{
+    background: url(pic/default.png);
+    display:block;
+    width: 103px;
+    height: 27px;
+    text-align:center;
+    line-height:27px;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight: bold;
+}
+#runPlay .right dl dd.btn a:hover{
+    background: url("pic/d_hover.png") ;
+}
+.auto{
+    width:980px;
+    margin:0 auto;
+}
+/*---------------------------------------底部----------------------------------------------*/
+#footer {
+    height: 100px;
+    background: url(pic/footer_bg.jpg) repeat-x;
+}
+#footer p{
+    text-align:center;
+    margin:0 0 0 0;
+    color:#ffffff;
+    line-height: 180%;
+}
+#footer p.p1{
+    padding:20px 0 0 0 ;
+}
+#footer p a{
+    color:#ffffff;
+    text-decoration:underline;
+    margin:0 20px 0 0;
+}
+#footer p a.last{
+    margin:0;
+}/*用来覆盖这个上面的一个对所有的a的设置*/
+/*---------------------------------------------------------定义中间部分居中的公共代码-----------------------------------------------------------------*/
+#main{
+    background:url(pic/main_top_bg.jpg) repeat-x;
+}
+#main1{
+    background:url(pic/main1_bottom_bg.jpg) 0px bottom repeat-x;
+}
+#wrap{
+    width: 920px;
+    height: 850px;
+    margin:0 auto;
+    /*设置块居中的的一种方法*/
+}
+/*----------------------------------------------------------------主体的左边共有的*--------------------------------------------------------*/
+#wrap #leftBody{
+    width: 620px;
+    height: 850px;
+    float:left;
+}
+/*-----------------------------------------------------------主体的右侧------------------------------------------------------------------------*/
+#wrap #rightBody{
+    width: 240px;
+    height: 850px;
+    float:right;
+}
+#rightBody .rightDiv1 h2 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 25px 0 0 0;
+}
+#rightBody .rightDiv1 ul li{
+    border-bottom:1px dashed #ccc;
+    height:70px;
+    padding:15px 0 0 0;
+}
+#rightBody .rightDiv1 ul li h3 a{
+    color:#0074c5;
+    font-weight:normal;
+    text-decoration: underline;
+}
+#rightBody .rightDiv1 ul li h3 a:hover{
+    color:#009900;
+}
+#rightBody .rightDiv1 ul li p{
+    color:#555;
+    margin:5px 0 0 0;
+}
+#rightBody .rightDiv2 dl{
+    height:64px;
+    margin:35px 0 0 0;
+}
+#rightBody .rightDiv2 dl dt{
+    padding:8px 0 3px 0;
+}
+#rightBody .rightDiv2 dl.dl1{
+    background:url(pic/twitter.png) 160px center no-repeat;
+}
+#rightBody .rightDiv2 dl.dl2{
+    background:url(pic/rss.png) 160px center no-repeat;
+}
+#rightBody .rightDiv2 dl dt a{
+    font-size:24px;
+    color:#333;
+    font-weight:bold;
+}
+#rightBody .rightDiv2 dl dd {
+    font-size:15px;
+    color:#333;
+    font-weight:bold;
+}

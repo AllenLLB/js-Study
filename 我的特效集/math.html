@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>0-8不重复随机数</title>
+</head>
+<body>
+	<script type="text/javascript">
+		 function getRandom(){
+        return Math.floor(Math.random()*9);
+    }
+    function hasSame(item){
+        for(var i=0;i<randomNums.length;i++){
+            if(item==randomNums[i]){
+                return true;
+            }
+        }
+        return false;
+    }
+    var randomNums=new Array();
+    //var radNum=getRandom();
+    //randomNums.push(radNum);
+    //for(var i=0;i<20;i++){
+	while (randomNums.length<9){
+        radNum=getRandom();
+        if(!hasSame(radNum)){
+            randomNums.push(radNum);
+        }
+    }
+    //}
+
+    // -----输出自己改改，上面注释的都没用的。
+    //alert(randomNums.length);
+    // for(var j=0;j<randomNums.length;j++){
+    //     document.write(randomNums[j]);
+    // }
+    // randomNums.length=0;
+     document.write(randomNums);
+	</script>
+</body>
+</html>

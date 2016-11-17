@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="container" style="width:800px;height:600px;border:1px solid green">
+    <div class="div1" style="width:400px;height:300px;border:1px solid red;position:absolute;top:0;left:0" ></div>
+    <div class="div2" style="width:400px;height:300px;border:1px solid black;position:absolute;top:310px;left:0"></div>
+</div>
+
+</body>
+<script type="text/javascript">
+    var div1=document.getElementsByClassName("div1")[0];
+    var div2=document.getElementsByClassName("div2")[0];
+    var a=div1.style.top;
+    var b=div1.style.left;
+    div1.style.top=div2.style.top;
+    div1.style.left=div2.style.left;
+    div2.style.left=b;
+    div2.style.top=a;
+</script>
+</html>

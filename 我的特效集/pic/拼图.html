@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>拼图游戏</title>
+    <link rel="stylesheet" href="exchange.css" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <div class="all img1"><img src="01.gif" width="137" height="137"/></div>
+        <div class="all img2"><img src="02.gif" width="137" height="137"/></div>
+        <div class="all img3"><img src="03.gif" width="137" height="137"/></div>
+        <div class="all img4"><img src="04.gif" width="137" height="137"/></div>
+        <div class="all img5"><img src="05.gif" width="137" height="137"/></div>
+        <div class="all img6"><img src="06.gif" width="137" height="137"/></div>
+        <div class="all img7"><img src="07.gif" width="137" height="137"/></div>
+        <div class="all img8"><img src="08.gif" width="137" height="137"/></div>
+        <div class="all img9"><img src="09.gif" width="137" height="137" alt="empty"/></div>
+    </div>
+    <div id="BigPic">
+        <img src="big.jpg">
+    </div>
+    <div id="redMe">
+        游戏规则：通过上下左右移动白块,能使得这些小块交换位置,最终移动至左边图片就算是游戏成功完成!
+    </div>
+    <div id="button">
+        <button class="bt1" onclick="moveUp()">UP</button>
+        <button class="bt2" onclick="moveDown()">DOWN</button>
+        <button class="bt3" onclick='moveLeft()'>LEFT</button>
+        <button class="bt4" onclick='moveRight()'>RIGHT</button>
+    </div>
+</body>
+<script type="text/javascript" src="tool1.js"></script>
+<script type="text/javascript" src="exchange.js"></script>
+</html>
