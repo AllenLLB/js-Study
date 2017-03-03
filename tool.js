@@ -31,8 +31,8 @@ function getByClass(classname){
 
 //3.兼容性获取事件对象
 
-function getEvent(e){
-     var oEvent=e||window.event;
+function getEvent(e){       //主要是兼容IE8及之前与大多数的浏览器
+     var oEvent = e || window.event;
      return oEvent;
 }
 
@@ -40,8 +40,8 @@ function getEvent(e){
 
 function addEvent(element,type,handle){
         if(element.addEventListener){        //DOM2级
-            element.addEventListener(type,handler,false);    //执行事件冒泡流
-        }else if(element.attachEvent){
+            element.addEventListener(type,handler,false);    //执行事件冒泡流，防止捕获方法
+        }else if(element.attachEvent){       //IE9之前IE5之后
             element.attachEvent('on'+type,handler);
         }else{
             element['on'+type]=handler;    //任何元素支持的写法
@@ -54,7 +54,7 @@ function addEvent(element,type,handle){
 
 function(element,type,handler){
         if(element.removeEventListener){        //DOM2级
-            element.removeEventListener(type,handler,false);    //执行事件冒泡流
+            element.removeEventListener(type,handler,false);    //执行事件冒泡流，防止捕获方法
         }else if(element.detachEvent){
             element.detachEvent('on'+type,handler);
         }else{
@@ -66,26 +66,25 @@ function(element,type,handler){
 //6.返回事件的类型
 
 function getType(e){
-     var oEvent=e||window.event;
+     var oEvent = e ||window.event;
     return oEvent.type;    //不存在兼容性问题
 }
 
 //7.返回事件所在的元素
 
 function getE(e){
-    var oEvent=e||window.event;
-    return oEvent.target||oEvent.srcElement;
-
+    var oEvent = e || window.event;
+    return oEvent.target || oEvent.srcElement;  //兼容大多数浏览器与IE（IE是srcElement）
 }
 
 //8.取消事件冒泡
 
 function stop(e){
-     var oEvent=e||window.event;
-     if(oEvent.stopPropagation){
+     var oEvent = e || window.event;
+     if(oEvent.stopPropagation){    //适用于常见大多数浏览器
             oEvent.stopPropagation();
      }else{
-            oEvent.cancelBubble=true;  //取消事件冒泡
+            oEvent.cancelBubble = true;  //取消事件冒泡，IE浏览器
      }
 }
 
@@ -93,7 +92,7 @@ function stop(e){
 //9.取消默认行为
 
 function prevent(e){
-      var oEvent=e||window.event;
+      var oEvent = e || window.event;
       if(oEvent.preventDefault){
            oEvent.preventDefault();
       }else{
@@ -106,7 +105,7 @@ function prevent(e){
 
 function addLoadEvent(func){
     var oldLoad=window.onload;
-    if(typeof(window.onload)!="function"){
+    if(typeof(window.onload) != "function"){
         window.onload=func;
     }else{
         window.onload=function(){
